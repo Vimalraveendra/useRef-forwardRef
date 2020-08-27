@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 import "./App.css";
+import Input from "./components/Input";
 
 const App = () => {
   const firstNameRef = useRef(null);
@@ -30,7 +31,7 @@ const App = () => {
         <h1>Use Ref</h1>
         <label>
           FirstName:
-          <input
+          <Input
             ref={firstNameRef}
             type="text"
             placeholder="Enter your first name"
@@ -39,7 +40,7 @@ const App = () => {
         </label>
         <label>
           LastName:
-          <input
+          <Input
             ref={lastNameRef}
             type="text"
             placeholder="Enter your last name"
